@@ -52,6 +52,6 @@ class Song
     @@all << self.new_from_filename(filename)
   end
   def self.destroy_all
-    self.all.delete
+    self.all.clear
   end
 end
