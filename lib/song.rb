@@ -41,6 +41,7 @@ class Song
     @@all.sort {|a, b| a.name <=> b.name}
   end
   def self.new_from_filename (filename)
-    
+    fn_no_extension = filename.split(".mp3")
+    artist_song_array = fn_no_extension.split("-")
   end
 end
