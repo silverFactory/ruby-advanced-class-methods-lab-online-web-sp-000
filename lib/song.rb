@@ -42,7 +42,7 @@ class Song
   end
   def self.new_from_filename (filename)
     fn_no_extension = filename.split(".mp3")
-    artist_song_array = fn_no_extension.split("-")
+    artist_song_array = fn_no_extension.join.split("-")
     song = Song.new
     song.name = artist_song_array[1]
     song.artist_name = artist_song_array[0]
